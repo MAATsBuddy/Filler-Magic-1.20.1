@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "fillermagic",
+	"version": "${version}",
+	"name": "Filler magic",
+	"description": "Makes some spells have a version for every element",
+	"authors": [
+		"MAATs Buddy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/fillermagic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.maatsbuddy.fillermagic.FillerMagic"
+		],
+		"fabric-datagen": [
+			"net.maatsbuddy.fillermagic.FillerMagicDataGenerator"
+		],
+		"client": [
+			"net.maatsbuddy.fillermagic.FillerMagicClient"
+		]
+	},
+	"mixins": [
+		"fillermagic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
